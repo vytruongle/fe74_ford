@@ -1,0 +1,62 @@
+// color
+$bg-header-1: #f2f2f2;
+$bg-header-2: #fff;
+$bg-navbar-sub: #00142e;
+$white: #fff;
+$bg-btn-carousel: rgba(0, 20, 46, 0.7);
+
+$primary-text: #00095b;
+$primary-hover-text: #1700f4;
+$sub-color-text: #4d4d4d;
+$border-color: #6e6e6e;
+
+// font size
+$fs-1: 11px;
+$fs-2: 13px;
+$fs-3: 12px;
+$fs-4: 14px;
+$fs-5: 36px;
+$fs-6: 1rem;
+$fs-7: 32px;
+$fs-8: 1.2rem;
+
+// font weight
+
+$fw-1: 500;
+$fw-2: 600;
+$fw-3: 900;
+$fw-4: 400;
+
+// padding
+$pd-1: 8px;
+$pd-2: 16px;
+$pd-3: 0.8rem;
+$pd-4: 2.8rem;
+$pd-5: 100px;
+
+// margin
+$mg-1: 6px;
+$mg-2: 1.8rem;
+$mg-3: 9.6rem;
+$mg-4: 14px;
+
+// size height&width
+$size-1: 30px;
+$bg-wd-1: 35px;
+$bg-hg-1: 24px;
+$bg-wd-2: 60px;
+$bg-hg-2: 40px;
+$btn-height: 2.625rem;
+$btn-width: 230px;
+
+//break points
+$breakpoints: (
+  "extra-large": 1100px,
+  "large": 994px,
+  "medium": 768px,
+  "small": 576px,
+  "extra-large-down": 1199.98px,
+  "large-down": 991.98px,
+  "medium-down": 767.98px,
+  "small-down": 575.98px,
+);

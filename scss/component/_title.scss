@@ -1,0 +1,10 @@
+.title {
+  @include title-setting(
+    $fs-7,
+    $fs-6,
+    $primary-text,
+    $sub-color-text,
+    $fw-1,
+    $fw-1
+  );
+}

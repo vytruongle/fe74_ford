@@ -1,0 +1,134 @@
+#carouselExampleCaptions {
+  padding: 0;
+  .carousel-indicators {
+    background-color: $bg-btn-carousel;
+    bottom: $pd-4;
+    width: 15%;
+    margin: auto;
+    padding: $pd-2;
+    border-radius: 60px;
+    li {
+      height: 1px;
+      &.active {
+        height: 2px;
+      }
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 30%;
+    }
+  }
+  .carousel-control-icon {
+    i {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+  .carousel-inner {
+    .carousel-item {
+      .overlay {
+        @include overlays;
+      }
+      img {
+        height: 100vh;
+        object-fit: fill;
+      }
+      .carousel-caption {
+        top: 15px;
+        bottom: 20px;
+        left: 30px;
+        text-align: start;
+        h5 {
+          @include fontText($white, $fs-5, $fw-1);
+          margin-bottom: 12px;
+        }
+        .carousel-arrow-icon {
+          font-size: $fs-3;
+        }
+        .carousel__sub-tittle {
+          @include fontText($white, $fs-6, $fw-1);
+        }
+        .popup-link-text {
+          position: absolute;
+          bottom: $pd-1;
+          @include fontText($white, $fs-1, $fw-1);
+        }
+      }
+    }
+  }
+}
+
+.carousel__bg-bottom {
+  margin-top: $pd-5;
+  background-image: url("../../img/carouselBgBottom.2160.21602.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+@include responsive("large") {
+  .container-lg {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  #carouselExampleCaptions {
+    .carousel-indicators {
+      width: 20%;
+    }
+    .carousel-inner {
+      .carousel-item {
+        img {
+          height: 80vh;
+        }
+        .carousel-caption {
+          padding: $pd-4 $pd-4 $pd-1 $pd-4;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+  .carousel__bg-bottom {
+    background-size: 220%;
+    height: 80vh;
+  }
+}
+
+@include responsive("small") {
+  #carouselExampleCaptions {
+    .container-lg {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .carousel-indicators {
+      width: 50%;
+    }
+    .carousel-inner {
+      .carousel-item {
+        img {
+          height: 60vh;
+        }
+        .carousel-caption {
+          padding: $pd-4 $pd-1 $pd-1 $pd-1;
+          left: 50%;
+          transform: translateX(-50%);
+          h5 {
+            @include fontText($white, $fs-7, $fw-1);
+          }
+          .carousel__sub-tittle {
+            display: block;
+            text-align: center;
+          }
+          .popup-link-text {
+            padding: 0 $pd-2;
+          }
+        }
+      }
+    }
+  }
+  .carousel__bg-bottom {
+    height: 55vh;
+  }
+}

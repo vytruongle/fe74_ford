@@ -1,0 +1,40 @@
+.sub-carousel {
+  padding: 75px;
+  .card {
+    border: none;
+    position: relative;
+    .card-body {
+      position: absolute;
+      top: 40px;
+      left: 1rem;
+      .card-title {
+        @include fontText($primary-text, $fs-7, $fw-2);
+      }
+      .card-text {
+        @include fontText($primary-text, $fs-6, $fw-1);
+      }
+      .card-link {
+        @include fontText($primary-text, $fs-4, $fw-1);
+        &:hover {
+          color: $primary-hover-text;
+        }
+      }
+    }
+  }
+}
+
+@include responsive("small") {
+  .sub-carousel {
+    padding: 0;
+    margin-top: 75px;
+    .card {
+      .card-body {
+        top: 0;
+        left: 0;
+        .card-title {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}

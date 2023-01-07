@@ -1,0 +1,9 @@
+.btn--primary {
+  @include style-button(
+    $primary-text,
+    $primary-hover-text,
+    $btn-height,
+    $btn-width,
+    $white
+  );
+}

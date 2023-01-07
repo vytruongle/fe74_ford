@@ -1,0 +1,56 @@
+.ford-tabs {
+  padding-top: 80px;
+  .nav {
+    border: 1px solid $border-color;
+    border-radius: 99.9rem;
+    width: 50%;
+    margin: auto;
+    .nav-link {
+      padding: 0.8rem 2.2rem;
+      @include fontText($primary-text, $fs-4, $fw-1);
+      &.active {
+        border-radius: 99.9rem;
+        background-color: $primary-text;
+        color: $white;
+        border: 1px solid $primary-text;
+        box-shadow: 0 10px 10px 0 rgb(0 0 0 / 10%),
+          0 20px 20px 0 rgb(0 0 0 / 10%), 0 30px 30px 0 rgb(0 0 0 / 15%);
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@include responsive("extra-large") {
+  .ford-tabs {
+    .nav {
+      width: 60%;
+    }
+  }
+}
+
+@include responsive("large") {
+  .ford-tabs {
+    .nav {
+      width: 80%;
+    }
+  }
+}
+
+@include responsive("medium") {
+  .ford-tabs {
+    padding-top: 100px;
+    .nav {
+      width: 100%;
+      border: none;
+      .nav-item {
+        width: 100%;
+      }
+      .nav-link {
+        &.active {
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
