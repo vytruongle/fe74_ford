@@ -4,5 +4,5 @@ Le Truong Vy:
 + Made mixin.scss and reset layout
 
 Pham Thanh Cao:
-Made the all the items left
-Add some new variables
++Made the all the items left
++Add some new variables
