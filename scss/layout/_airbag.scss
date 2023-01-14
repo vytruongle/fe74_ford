@@ -1,0 +1,31 @@
+@import "../helper/variable";
+
+.air-bag {
+    .container{
+        p{
+            width: 70%;
+            margin: auto;
+            line-height: 20px;
+        }
+
+    }
+}
+
+@include responsive("large") {
+    .air-bag {
+        .container{
+            min-width: 100vw;
+        }
+    }
+}
+
+@include responsive("small-down") {
+    .air-bag {
+        .container{
+            min-width: 100vw;
+            p{
+                padding: 0.5rem 1rem;
+            }
+        }
+    }
+}
