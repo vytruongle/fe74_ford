@@ -11,6 +11,10 @@ body {
   letter-spacing: 0.4px;
   line-height: 1;
 }
+html ul,
+body ul {
+  list-style: none;
+}
 
 header .navbar {
   padding: 0;
