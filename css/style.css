@@ -12,10 +12,6 @@ body {
   line-height: 1;
 }
 
-ul {
-  list-style: none;
-}
-
 header .navbar {
   padding: 0;
 }
@@ -277,10 +273,10 @@ header .navbar #collapsibleNavbar .header__bottom--sub .header__logo--sub .nav-i
     font-weight: 600;
   }
 }
-#carousel_Post {
+#carouselExampleCaptions {
   padding: 0;
 }
-#carousel_Post .carousel-indicators {
+#carouselExampleCaptions .carousel-indicators {
   background-color: rgba(0, 20, 46, 0.7);
   bottom: 2.8rem;
   width: 15%;
@@ -288,24 +284,21 @@ header .navbar #collapsibleNavbar .header__bottom--sub .header__logo--sub .nav-i
   padding: 16px;
   border-radius: 60px;
 }
-#carousel_Post .carousel-indicators li {
+#carouselExampleCaptions .carousel-indicators li {
   height: 1px;
 }
-#carousel_Post .carousel-indicators li.active {
+#carouselExampleCaptions .carousel-indicators li.active {
   height: 2px;
 }
-#carousel_Post .carousel-indicators .carousel-control-prev,
-#carousel_Post .carousel-indicators .carousel-control-next {
+#carouselExampleCaptions .carousel-indicators .carousel-control-prev,
+#carouselExampleCaptions .carousel-indicators .carousel-control-next {
   width: 30%;
 }
-#carousel_Post .carousel-control-icon i {
+#carouselExampleCaptions .carousel-control-icon i {
   font-size: 24px;
   line-height: 24px;
 }
-#carousel_Post .carousel-inner .carousel-item {
-  width: 50%;
-}
-#carousel_Post .carousel-inner .carousel-item .overlay {
+#carouselExampleCaptions .carousel-inner .carousel-item .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -313,31 +306,32 @@ header .navbar #collapsibleNavbar .header__bottom--sub .header__logo--sub .nav-i
   height: 100%;
   background-color: rgba(0, 0, 0, 0.15);
 }
-#carousel_Post .carousel-inner .carousel-item img {
+#carouselExampleCaptions .carousel-inner .carousel-item img {
   height: 80vh;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
-#carousel_Post .carousel-inner .carousel-item .carousel-caption {
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
   top: 15px;
   bottom: 20px;
   left: 30px;
   text-align: start;
 }
-#carousel_Post .carousel-inner .carousel-item .carousel-caption h5 {
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption h5 {
   color: #fff;
   font-size: 36px;
   font-weight: 500;
   margin-bottom: 12px;
 }
-#carousel_Post .carousel-inner .carousel-item .carousel-caption .carousel-arrow-icon {
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .carousel-arrow-icon {
   font-size: 12px;
 }
-#carousel_Post .carousel-inner .carousel-item .carousel-caption .carousel__sub-tittle {
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .carousel__sub-tittle {
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
 }
-#carousel_Post .carousel-inner .carousel-item .carousel-caption .popup-link-text {
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption .popup-link-text {
   position: absolute;
   bottom: 8px;
   color: #fff;
